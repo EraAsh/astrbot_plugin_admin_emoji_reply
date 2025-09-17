@@ -1,0 +1,2 @@
+# astrbot_plugin_admin_emoji_reply
+自动为指定的用户回复表情消息，支持开关
