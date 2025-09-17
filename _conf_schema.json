@@ -6,6 +6,13 @@
     "hint": "点击添加新项，输入QQ号后按回车确认。留空则禁用此功能。",
     "obvious_hint": true
   },
+  "reply_delay": {
+    "description": "设置每个表情回应之间的延迟时间（秒）。",
+    "type": "float",
+    "default": 0.3,
+    "hint": "可以设置为0以实现最快速度，或适当增加以避免API调用过于频繁。",
+    "obvious_hint": false
+  },
   "emoji_names": {
     "description": "设置回应时使用的表情列表。支持系统表情中文名（如'得意'）或单个Unicode Emoji（如'👍'）。",
     "type": "list",
