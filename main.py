@@ -82,14 +82,16 @@ class AdminEmojiReply(Star):
         except Exception as e:
             logger.error(f"保存插件状态失败: {e}")
 
-    @filter.command("打开表情回复", permission=filter.Permission.ADMIN)
+    @filter.command("打开表情回复")
+    @filter.permission_type(filter.PermissionType.ADMIN)
     async def enable_reply(self, event: AstrMessageEvent):
         """启用自动表情回复功能"""
         self.enabled = True
         self._save_status()
         yield event.plain_result("✅ 自动表情回复已开启")
 
-    @filter.command("关闭表情回复", permission=filter.Permission.ADMIN)
+    @filter.command("关闭表情回复")
+    @filter.permission_type(filter.PermissionType.ADMIN)
     async def disable_reply(self, event: AstrMessageEvent):
         """禁用自动表情回复功能"""
         self.enabled = False
