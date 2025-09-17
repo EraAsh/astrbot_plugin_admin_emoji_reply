@@ -1,0 +1,9 @@
+name: "admin_emoji_reply"
+author: "EraAsh"
+description: "自动为指定的用户回复表情消息，支持开关"
+version: "1.6.0"
+repo: "https://github.com/EraAsh/astrbot_plugin_admin_emoji_reply"
+tags: ["QQ", "工具", "自动化"]
+license: "AGPL-3.0"
+python_version: ">=3.8"
+astrbot_version: ">=3.4.0"
